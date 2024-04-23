@@ -26,7 +26,7 @@ go build -o bin
 ./bin/exec-api -p 9090
 ...
 ```
-request to server for running ***ls /*** command in server:
+request to server for running ```ls /``` command in server:
 ```sh
 curl -XPOST http://localhost:9090/run -d '{"cmd":"ls /"}' -H "Content-Type: application/json" 
 ...
